@@ -5,6 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Farmacias de Turno - OSDE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ea6e06fdf.js" crossorigin="anonymous"></script>
+
 	<style type="text/css">
 		body {
 			Margin: 0;
@@ -28,9 +33,28 @@
 		}
 
 		.webkit {
-			max-width: 700px;
+			max-width: 640px;
 			background-color: #ffffff;
 		}
+
+        .infoDelMes {
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            color:#777777;
+            width: 550px;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+
+        .infoDelMes li {
+            padding: 5px;
+        }
+
+        .comunicacion {
+            text-decoration: none;
+            list-style: none;
+            color:#1226AA;
+        }
 
 		.outer {
 			Margin: 0 auto;
@@ -81,21 +105,63 @@
 <body>
 	<center class="wrapper">
 		<div class="webkit">
-			<table class="outer" align="center">
+			
+            <table class="outer" align="center">
 				<!--contenido web-->
 				<!--banner-->
 				<tr>
 					<td>
-						<img src="" alt="">
+						<img src="https://raw.githubusercontent.com/zapiralos/farmaciasDeTurno/e5a23100db95e054177da96ec9c91521b35aa071/newsletter/img/banner.svg" 
+                        alt="OSDE" 
+                        width="640">
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="https://raw.githubusercontent.com/zapiralos/farmaciasDeTurno/main/marzo2022.jpg">
-							<img src="https://raw.githubusercontent.com/zapiralos/farmaciasDeTurno/main/marzo2022.jpg"
-							alt="información OSDE" 
-							width="700">
-						</a>
+						<ul class="infoDelMes">
+                            <li>
+                                <p>Te acercamos el cronograma de <strong>Farmacias de Turno</strong> correspondientes al mes de <strong>Junio de 2022.</strong> </p>
+                            </li>
+                            <li>
+                                <p>Gestioná Online sin salir de tu casa. Descargá la <a href="https://play.google.com/store/apps/details?id=com.osde.ar&hl=es_AR&gl=US">App OSDE Móvil</a> y en la sección Gestiones Online podrás:</p>
+                                <ul>
+                                    <li>
+                                        Solicitar reintegros
+                                    </li>
+                                    <li>
+                                        Empadronarte para adquirir anticonceptivos gratis
+                                    </li>
+                                    <li>
+                                        Abonar tu Factura Online
+                                    </li>
+                                    <li>
+                                        Autorizar internaciones, cirugías, estudios y más
+                                    </li>
+                                    <li>
+                                        Modificar tus datos de contacto
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Recordamos nuestros canales de atención digital:</p>
+                                <ul class="comunicacion">
+                                    <li>
+                                        <p><i class="fa-brands fa-whatsapp"></i> <strong>WhatsApp</strong></br>
+                                            11.4872.9000</br>
+                                            Horario de atención: lunes a viernes de 9 a 20 horas.</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-phone"></i> <strong>Centro de Atención Telefónica</strong></br>
+                                            0810.555.6733</br>
+                                            Horario de atención: lunes a viernes de 9 a 20 horas.</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fa-solid fa-envelope"></i> <strong>Contacto web <a href="https://www.osde.com.ar/contacto">(www.osde.com.ar/contacto)</a></strong></br>
+                                            Este canal te permite adjuntar archivos si necesitás enviar documentación para una gestión en particular.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
 					</td>
 				</tr>
 				
