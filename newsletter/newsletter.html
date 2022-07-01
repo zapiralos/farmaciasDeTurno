@@ -1,81 +1,98 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Farmacias de Turno - OSDE</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8ea6e06fdf.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmacias de turno</title>
 
-	<style type="text/css">
-		body {
-			Margin: 0;
-			padding: 0;
-			background-color: #f6f9fc;
-		}
-		table {
-			border-spacing: 0;
-		}
-		td {
-			padding: 0;
-		}
-		img {
-			border: 0;
-		}
-		.wrapper {
-			width: 100%;
-			table-layout: fixed;
-			background-color: #f6f9fc;
-			padding-bottom: 40px;
-		}
+<style type="text/css">
+	body {
+		margin: 0;
+		background-color: #cccccc;
+	}
+	table {
+		border-spacing: 0;
+	}
+	td {
+		padding: 0;
+	}
+	img {
+		border: 0;
+	}
 
-		.webkit {
-			max-width: 640px;
-			background-color: #ffffff;
-		}
+	.wrapper {
+		width: 100%;
+		table-layout: fixed;
+		background-color: #ffffff;
+		padding-bottom: 60px;
+	}
 
-        .infoDelMes {
-            font-family: 'Nunito', sans-serif;
-            font-size: 16px;
-            color:#777777;
-            width: 550px;
-            margin: 0 auto;
-            margin-top: 1rem;
-        }
+	.main {
+		background-color: #ffffff;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 600px;
+		border-spacing: 0;
+		font-family: sans-serif;
+		color: #171a1b;
+	}
 
-        .infoDelMes li {
-            padding: 5px;
-        }
+	.infoDelMes {
+    	font-size: 14px;
+        color:#777777;
+    }
 
-        .comunicacion {
-            text-decoration: none;
-            list-style: none;
-            color:#1226AA;
-        }
+	.contenido {
+		padding: 20px 50px 0px ;
+	}
 
-        .contacto {
-            background-color: #1226AA;
-            color:#ffffff;
-            font-family: 'Nunito', sans-serif;
-            font-size: 20px;
-            width: 210px;
-            margin: 2px;
+	.comunicacion {
+        text-decoration: none;
+        list-style: none;
+        color:#1226AA;
+    }
 
-        }
+	.urgencias {
+		color: #6bcd80;
+		letter-spacing: 1px;
+	}
 
-		.outer {
-			Margin: 0 auto;
-			width: 100%;
-			max-width: 640px;
-			border-spacing: 0;
-			font-family: sans-serif;
-			color: #4a4a4a;
-		}
+	.riesgo {
+		color: #ff0000;
+		letter-spacing: 1px;
+		font-size: 12px;
+	}
 
-		.button {
+	.three-columns {
+		text-align: center;
+		font-size: 0;
+		padding: 15px 0 25px;		
+	}
+
+	.three-columns .column {
+		width: 100%;
+		max-width: 200px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.three-columns .padding {
+		padding: 15px;
+	}
+
+	.three-columns .content {
+		height: 120px; 
+		font-size: 15px;
+		line-height: 20px;
+		background-color: #1226AA;
+		color: #ffffff;
+		border-radius:10px; 
+		width: 163px;
+	}
+
+	.button {
 			text-decoration: none;
 			color: #1226A9;
 			padding: 7px;
@@ -83,7 +100,7 @@
 			border-radius: 5px;
 		}
 
-		.button:hover {
+	.button:hover {
 			text-decoration: none;
 			color: #ffffff;
 			padding: 7px;
@@ -92,7 +109,7 @@
 			border-radius: 5px;
 		}
 
-		.button:focus {
+	.button:focus {
 			text-decoration: none;
 			color: #ffffff;
 			padding: 7px;
@@ -101,124 +118,230 @@
 			border-radius: 5px;
 		}
 
-		.table-button {
+	.table-button {
 			padding: 30px;
 		}
 
-		@media screen and (max-width: 700px) { 
-		}
-		@media screen and (max-width: 400px) { 
-		}
-	</style>
+
+</style>
+
 </head>
-
 <body>
+
 	<center class="wrapper">
-		<div class="webkit">
-            <div class="table-responsive">
-			
-                <table class="outer" align="center">
-                <!--contenido web-->
-                    <!--banner-->
-                    <tr>
-                        <td>
-                            <img src="https://raw.githubusercontent.com/zapiralos/farmaciasDeTurno/e5a23100db95e054177da96ec9c91521b35aa071/newsletter/img/banner.svg" 
-                            alt="OSDE" 
-                            width="640">
-                        </td>
-                    </tr>
-                    <!--información-->
-                    <tr>
-                        <td>
-                            <ul class="infoDelMes">
-                                <li>
-                                    <p>Te acercamos el cronograma de <strong>Farmacias de Turno</strong> correspondientes al mes de <strong>Junio de 2022.</strong> </p>
-                                </li>
-                                <li>
-                                    <p>Gestioná Online sin salir de tu casa. Descargá la <a href="https://play.google.com/store/apps/details?id=com.osde.ar&hl=es_AR&gl=US">App OSDE Móvil</a> y en la sección Gestiones Online podrás:</p>
-                                    <ul>
-                                        <li>
-                                            Solicitar reintegros
-                                        </li>
-                                        <li>
-                                            Empadronarte para adquirir anticonceptivos gratis
-                                        </li>
-                                        <li>
-                                            Abonar tu Factura Online
-                                        </li>
-                                        <li>
-                                            Autorizar internaciones, cirugías, estudios y más
-                                        </li>
-                                        <li>
-                                            Modificar tus datos de contacto
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <p>Recordamos nuestros canales de atención digital:</p>
-                                    <ul class="comunicacion">
-                                        <li>
-                                            <p><i class="fa-brands fa-whatsapp" style="font-size: 24px; color: #555555;" ></i> 
-                                                <strong>WhatsApp</strong></br>
-                                                11.4872.9000</br>
-                                                Horario de atención: lunes a viernes de 9 a 20 horas.</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa-solid fa-phone" style="font-size: 20px; color: #555555;"></i> 
-                                                <strong>Centro de Atención Telefónica</strong></br>
-                                                0810.555.6733</br>
-                                                Horario de atención: lunes a viernes de 9 a 20 horas.</p>
-                                        </li>
-                                        <li>
-                                            <p><i class="fa-solid fa-envelope" style="font-size: 20px; color: #555555;"></i> 
-                                                <strong>Contacto web <a href="https://www.osde.com.ar/contacto">(www.osde.com.ar/contacto)</a></strong></br>
-                                                Este canal te permite adjuntar archivos si necesitás enviar documentación para una gestión en particular.</p>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
 
-                    <!--contacto-->
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    
-                    
-                    <!--separador-->
-                    <tr>
-                        <td>
-                            <img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/separador.png?raw=true" 
-                            alt="separador" 
-                            width="640">
-                        </td>
-                    </tr>
-                    <!--botón de farmacias-->
-                    <tr>
-                        <td align="center" class="table-button">
-                            <a class="button" href="https://drive.google.com/file/d/1ru0EEDBOpPKMiz946eo2eX7Oh06I1jCj/view?usp=sharing">
-                                Farmacias de Turno
-                            </a>
-                        </td>
-                    </tr>
+		<table class="main" width="100%">
 
-                </table>
-            </div>
-		</div>
+		
+
+
+<!-- banner -->
+			<tr>
+				<td>
+					<a href="https://www.osde.com.ar/">
+						<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/banner.png?raw=true" 
+						alt="OSDE">
+					</a>
+				</td>
+			</tr>
+
+<!-- info -->
+			<tr>
+				<td>
+					
+					<table class="infoDelMes">
+						<tr>
+							<td class="contenido">
+								<p>
+									<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/dot.png?raw=true" 
+									style="width: 5px;" alt="dot">
+									Te acercamos el cronograma de <strong>Farmacias de Turno</strong> correspondientes al mes de <strong>Junio de 2022.</strong> </p>
+							</td>
+						</tr>
+						<tr>
+							<td class="contenido">
+								<p>
+									<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/dot.png?raw=true" 
+									style="width: 5px;" alt="dot">
+									Gestioná Online sin salir de tu casa. Descargá la 
+									<a href="https://play.google.com/store/apps/details?id=com.osde.ar&hl=es_AR&gl=US">App OSDE Móvil</a>
+									y en la sección Gestiones Online podrás:
+								</p>
+								<ul>
+									<li>
+										Solicitar reintegros
+									</li>
+									<li>
+										Empadronarte para adquirir anticonceptivos gratis
+									</li>
+									<li>
+										Abonar tu Factura Online
+									</li>
+									<li>
+										Autorizar internaciones, cirugías, estudios y más
+									</li>
+									<li>
+										Modificar tus datos de contacto
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="contenido">
+								<p>
+									<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/dot.png?raw=true" 
+									style="width: 5px;" alt="dot">
+									 Recordamos nuestros canales de atención digital:</p>
+								<ul class="comunicacion">
+									<li>										 
+										<p style="margin-bottom: 0;">
+											<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/whatsapp.png?raw=true" 
+										style="width: 22px;" alt="whatsapp">
+											<strong>WhatsApp</strong></br>
+										</p>	
+										<p style="margin-left: 30px;">
+											11.4872.9000</br>
+											Horario de atención: lunes a viernes de 9 a 20 horas.
+										</p>
+									</li>
+									<li>										 
+										<p style="margin-bottom: 0;">
+											<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/phone.png?raw=true" 
+										style="width: 22px;" alt="Centro Telefónico">
+											<strong>Centro de Atención Telefónica</strong></br>
+										</p>	
+										<p style="margin-left: 30px;">
+											0810.555.6733</br>
+											Horario de atención: lunes a viernes de 9 a 20 horas.
+										</p>
+									</li>
+									<li>										 
+										<p style="margin-bottom: 0;">
+											<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/contacto.png?raw=true" 
+										style="width: 22px;" alt="Centro Telefónico">
+											<strong>Contacto web <a href="https://www.osde.com.ar/contacto">(www.osde.com.ar/contacto)</a></strong></br>
+										</p>	
+										<p style="margin-left: 30px;">
+											Este canal te permite adjuntar archivos si necesitás enviar documentación para una gestión en particular.
+										</p>
+									</li>									
+								</ul>
+							</td>
+						</tr>							
+					</table>
+
+				</td>
+			</tr>
+
+<!--contacto three-columns-->
+			<tr>
+				<td>
+					<table width="100%" style="border-spacing: 0;">
+						<tr>
+							<td class="three-columns">
+
+								<table class="column">
+									<tr>
+										<td class="padding">
+
+											<table class="content">
+												<tr>
+													<td>
+														<p style="font-size:17px; margin-bottom: 0;">0810.888.7788</p>
+														<p style="font-size:17px; margin-bottom: 0;">0810.999.6300</p>
+														<p class="urgencias" style="margin-bottom: 0;">URGENCIAS</p>
+													</td>
+												</tr>
+											</table>
+
+											
+
+										</td>
+									</tr>
+								</table>
+
+								<table class="column">
+									<tr>
+										<td class="padding">
+
+											<table class="content">
+												<tr>
+													<td>
+														<p style="margin-bottom: 0; font-size:17px;">0810.666.1111</p>														
+														<p class="riesgo" style="margin-bottom: 0;">RIESGO DE VIDA</p>
+													</td>
+												</tr>
+											</table>
+
+											
+
+										</td>
+									</tr>
+								</table>
+
+								<table class="column">
+									<tr>
+										<td class="padding">
+
+											<table class="content">
+												<tr>
+													<td>
+														<p style="margin-bottom: 0; font-size:17px;">0810.888.7788</p>
+														<p style="margin-bottom: 0; font-size:6px;">
+														CENTRO DE ANTENCIÓN TELEFÓNICA</p>
+														<p style="margin-bottom: 0; font-size:9px;">
+															ASESORAMIENTO AL SOCIO</p>
+															<p style="margin-bottom: 0px; font-size:8px;">
+																LUNES A VIERNES DE 9 A 20.</p>
+													</td>
+												</tr>
+											</table>
+
+										</td>
+									</tr>
+								</table>
+
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+<!-- barra de separacion -->
+            <tr>
+				<td>
+					<img src="https://github.com/zapiralos/farmaciasDeTurno/blob/main/newsletter/img/separador.png?raw=true" 
+						alt="OSDE">
+				</td>
+			</tr>
+
+<!-- BUTTON -->
+			<tr>
+				<td align="center" class="table-button">
+					<a class="button" href="https://drive.google.com/file/d/1e31suV6KDex05TujGol9WvQEZhk0x_wk/view?usp=sharing">
+						Farmacias de Turno
+					</a>
+				</td>
+			</tr>
+
+
+
+<!-- FOOTER SECTION -->
+
+
+		</table>
 	</center>
-</body>
 
+</body>
 </html>
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
